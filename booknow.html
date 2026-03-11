@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pavlo Myskov">
+    <meta
+      name="description"
+      content="The Barbershop Website for Successful Barbershop Business"
+   >
+    <meta
+      name="keywords"
+      content="barbers, barbershop, barber shop, haircut, beard trim, shaving, barbers cut, mens barbers"
+   >
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Book Now</title>
+  </head>
+  <body>
+    <!-- sticky navbar for screen size 750px wide and down -->
+    <header class="sticky">
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="barber shop nav logo"
+          >
+          </a>
+        </div>
+
+        <input type="checkbox" id="burger-input">
+        <label id="burger-menu" for="burger-input"></label>
+        <ul class="menu-list" id="dropdown-navbar">
+          <li class="brush-stroke"><a href="index.html">HOME</a></li>
+          <li class="brush-stroke"><a href="booknow.html">PRICE</a></li>
+          <li class="brush-stroke"><a href="gallery.html">GALLERY</a></li>
+        </ul>
+
+        <div class="brush-stroke book-now" id="book-now">
+          <a href="booknow.html#appoitment">Book Now</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- price section -->
+      <section class="services-container price-container">
+        <h2>Choose a service</h2>
+
+        <div class="services-content price">
+          <table>
+            <caption>
+              <h3>Men Haircut</h3>
+            </caption>
+            <tr>
+              <th>Buzz Cut</th>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <th>Crew Cut</th>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <th>Faux Hawk</th>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <th>Spiky Hair</th>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <th>Ivy League</th>
+              <td>₹1508</td>
+            </tr>
+            <tr>
+              <th>Kids Trim</th>
+              <td>₹80</td>
+            </tr>
+
+            <tr>
+              <th>Custom Style</th>
+              <td data-content="by-agreement">by agreement</td>
+            </tr>
+          </table>
+
+          <table>
+            <caption>
+              <h3>Beard Trim and Shave</h3>
+            </caption>
+            <tr>
+              <th>Beard Trim and Haircut</th>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <th>Simple Beard Trim</th>
+              <td>₹50</td>
+            </tr>
+            <tr>
+              <th>Beard Trim & Neckline Shave</th>
+              <td>₹50</td>
+            </tr>
+            <tr>
+              <th>Custom Beard Style</th>
+              <td>₹50</td>
+            </tr>
+            <tr>
+              <th>Head Shave</th>
+              <td>₹100</td>
+            </tr>
+            <tr>
+              <th>Face Shave</th>
+              <td>₹50</td>
+            </tr>
+            <tr>
+              <th>Full Shave</th>
+              <td>₹50</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section class="appoitment-container detail-service-container">
+        <div id="appoitment"></div>
+        <div class="grunge-border left"></div>
+        <div class="grunge-border right"></div>
+        <div class="form-container">
+          <form action="https://formdump.codeinstitute.net/" method="POST" class="appoitment-form">
+            <h2>Book appointment</h2>
+
+            <div class="data">
+              <div>
+                <div class="input-block personal-info">
+                  <input
+                    type="text"
+                    id="f_name"
+                    name="f_name"
+                    placeholder="First Name"
+                    required
+                 >
+                  <label for="f_name">First Name</label>
+                </div>
+
+                <div class="input-block personal-info">
+                  <input
+                    type="text"
+                    id="l_name"
+                    name="l_name"
+                    placeholder="Last Name"
+                    required
+                 >
+                  <label for="l_name">Last Name</label>
+                </div>
+              </div>
+
+              <div>
+                <div class="input-block personal-info">
+                  <input
+                    type="number"
+                    id="p_number"
+                    name="p_number"
+                    placeholder="Phone Number"
+                 >
+                  <label for="p_number">Phone Number</label>
+                </div>
+
+                <div class="input-block personal-info">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                 >
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div>
+                <div class="input-block datetime">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="input-block datetime">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" name="time" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-selection-container">
+              <h3>Select a service</h3>
+
+              <div class="service-selection-wraper">
+                <div class="checkbox-field">
+                  <input type="checkbox" id="haircut-checkbox" name="haircut">
+                  <label for="haircut-checkbox">
+                    <img src="assets/images/hair-icon.png" alt="hair icon">
+                    <span>Haircut</span>
+                  </label>
+                </div>
+
+                <div class="checkbox-field">
+                  <input
+                    type="checkbox"
+                    id="beard-trim-checkbox"
+                    name="beard-trim"
+                 >
+                  <label for="beard-trim-checkbox">
+                    <img src="assets/images/beard-icon.png" alt="beard icon">
+                    <span>Beard Trim</span>
+                  </label>
+                </div>
+
+                <div class="checkbox-field">
+                  <input type="checkbox" id="shave-checkbox" name="shave">
+                  <label for="shave-checkbox">
+                    <img src="assets/images/razor-icon.png" alt="razor icon">
+                    <span>Shave</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-button">
+              <input type="submit" value="COMPLETE">
+            </div>
+          </form>
+        </div>
+
+        <!-- form section picture -->
+        <div class="picture-container">
+          <img
+            src="assets/images/pexels-lisa-fotios.webp"
+            alt="barber's workspace equipped with a chair, a shelf with creams, two flowerpots near the window"
+         >
+        </div>
+      </section>
+
+      <!-- map -->
+      <div class="map-wraper">
+        <iframe
+          src="https://www.google.com/maps?q=SWARN%20PATH%20SEC%204%20NEAR%20UPSARPANCH%20CHAI%2C%20MANSAROVAR%20JAIPUR%20302020&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="visit-us">
+          <h3>Visit Us</h3>
+          <div class="footer-wraper">
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                SWARN PATH SEC 4 NEAR UPSARPANCH CHAI,<br>
+                MANSAROVAR JAIPUR 302020
+              </p>
+            </div>
+            <div class="p-number">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+916376262183" target="_blank">+91 6376262183</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="opening-times">
+          <h3>Opening Times</h3>
+          <div class="footer-wraper">
+            <p>
+              <i class="far fa-calendar-alt"></i>
+              Monday - Saturday: 8am - 8pm
+            </p>
+            <p>
+              <i class="fas fa-calendar-week"></i>
+              Sunday and holiday: 10am - 4pm
+            </p>
+          </div>
+
+        </div>
+
+        <div class="find-us">
+          <h3>Find Us</h3>
+          <ul class="footer-wraper">
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li class="facebook">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <span>©2022 | Developed by</span>
+        <a
+          href="https://github.com/FlashDrag"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit author GitHub page (opens in a new tab)"
+          >FlashDrag</a
+        >
+        <span>| All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/c7dbda0798.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

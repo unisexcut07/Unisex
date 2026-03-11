@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pavlo Myskov">
+    <meta
+      name="description"
+      content="The Barbershop Website for Successful Barbershop Business"
+   >
+    <meta
+      name="keywords"
+      content="barbers, barbershop, barber shop, haircut, beard trim, shaving, barbers cut, mens barbers"
+   >
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>BarberShop</title>
+  </head>
+
+  <body>
+    <!-- home page header -->
+    <header id="home" class="main-header">
+      <div class="grunge-border"></div>
+      <div class="header-text">
+        <h1 class="text-center">Welcome to the Best Barbershop</h1>
+        <p><h1 class="text-center">BlackScissors Unisex Salon</h1>
+        <p>
+          We clearly observe the age-old traditions of the quality of men's
+          haircuts and shaving, we work comprehensively on your style and
+          appearance!
+        </p>
+      </div>
+    </header>
+
+    <!-- main and sticky navbar for screen size 750px wide and down -->
+    <nav class="navbar sticky">
+      <!-- logo -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            class="logo-image"
+            src="assets/images/logo.png"
+            alt="barber shop nav logo"
+         >
+        </a>
+      </div>
+
+      <!-- main and hamburger menu for scr size 900px wide and down -->
+      <input type="checkbox" id="burger-input">
+      <label id="burger-menu" for="burger-input"></label>
+      <ul class="menu-list" id="dropdown-navbar">
+        <li class="brush-stroke"><a href="index.html">HOME</a></li>
+        <li class="brush-stroke"><a href="booknow.html">PRICE</a></li>
+        <li class="brush-stroke"><a href="gallery.html">GALLERY</a></li>
+      </ul>
+
+      <!-- booking link -->
+      <div class="brush-stroke book-now" id="book-now">
+        <a href="booknow.html#appoitment">Book Now</a>
+      </div>
+    </nav>
+
+    <!-- main content of the page and unique to the site -->
+   <main>
+      <!-- services section -->
+      <section class="services-container" id="services">
+        <div class="grunge-border"></div>
+
+        <h2>Services<span id="stroke"></span></h2>
+
+        <div class="services-content">
+          <section>
+            <img src="assets/images/hair-icon.png" width="50" height="50" alt="hair icon">
+            <h3>Men Haircut</h3>
+            <ul>
+              <li>Buzz Cut</li>
+              <li>Crew Cut</li>
+              <li>Faux Hawk</li>
+              <li>Spiky Hair</li>
+              <li>Fade HairCut</li>
+              <li>Ivy League</li>
+            </ul>
+          </section>
+
+          <section>
+            <img src="assets/images/beard-icon.png" width="50" height="50" alt="beard icon">
+            <h3>Beard Trim</h3>
+            <ul>
+              <li>Stubble</li>
+              <li>Ducktail</li>
+              <li>Circle Beard</li>
+              <li>Goatee</li>
+              <li>Verdi</li>
+              <li>Beard Fade</li>
+            </ul>
+          </section>
+
+          <section>
+            <img src="assets/images/razor-icon.png" width="50" height="50" alt="razor icon">
+            <h3>Shave</h3>
+            <ul>
+              <li>Fast shaving</li>
+              <li>Eco-friendly</li>
+              <li>Razor shaving</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- detail service section -->
+      <div class="detail-service-container">
+        <div class="grunge-border left"></div>
+        <div class="grunge-border right"></div>
+
+        <article class="service-wraper" id="men-haircut">
+          <div class="service-pic haircut-pic">
+            <img src="assets//images/pexels-thgusstavo-santana-hair.webp" alt="Barber spraying hair styling product on client hair after haircut">
+          </div>
+          <div class="service-text">
+            <h3>Men Haircut</h3>
+            <p>
+              Your hair symbolizes your masculinity, personality, and
+              individuality. <br>
+              Rest assured our professional barbers will do wonders to help you
+              stand out from the crowd. Get comfortable in our old style barber
+              chair and relax while your barber achieves your desired look. <br>
+              Just check out a haircut from our list using
+              <a href="booknow.html#appoitment">Book Now</a> or order your custom.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-wraper" id="beard-trim">
+          <div class="service-pic beard-pic">
+            <img src="assets//images/pexels-thgusstavo-santana-beard.webp" alt="Barber trims a client's thick full beard with a clipper">
+          </div>
+          <div class="service-text">
+            <h3>Beard Trim</h3>
+            <p>
+              Our beards are our pride and joy! <br>
+              We provide Premium beard trimming service incorporating hot, white
+              cotton towels to soften the beard. We explain the beard growth cycle
+              and suggest our best beard oils. Visit our BarberShop even if you
+              keep your beard on the shorter side. <br>
+              Just <a href="booknow.html#appoitment">Book an appointment</a> right
+              now and get perfectly shaped beard or mustache style you envision.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-wraper" id="shave">
+          <div class="service-pic shave-pic">
+            <img src="assets/images/pexels-thgusstavo-santana-shave.webp" alt="Barber shaves a customer with a straight razor">
+          </div>
+          <div class="service-text">
+            <h3>Shave</h3>
+            <p>
+              Nothing compares to the straight razor in its ability to create a
+              smooth, close shave.<br>
+              We provide the straight razor shave complete with warm towels and
+              curated skin care products. We only use the very best razors on the
+              market. Your skin is left with a beautiful, healthy glow. <br>
+              <a href="booknow.html#appoitment">Book an appointment</a> with
+              Barber Shop today.
+            </p>
+          </div>
+        </article>
+      </div>
+   </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="visit-us">
+          <h3>Visit Us</h3>
+          <div class="footer-wraper">
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                SWARN PATH SEC 4 NEAR UPSARPANCH CHAI,<br>
+                MANSAROVAR JAIPUR 302020
+              </p>
+              
+            </div>
+            <div class="p-number">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+916376262183" target="_blank">+91 6376262183</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="opening-times">
+          <h3>Opening Times</h3>
+          <div class="footer-wraper">
+            <p>
+              <i class="far fa-calendar-alt"></i>
+              Monday - Sunday: 9am - 11pm
+            </p>
+            <p>
+              <i class="fas fa-calendar-week"></i>
+              Tuesday holiday
+            </p>
+          </div>
+        </div>
+
+        <div class="find-us">
+          <h3>Find Us</h3>
+          <ul class="footer-wraper">
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li class="facebook">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <span>©2026 | Copyright</span>
+        <a
+          href="https://github.com/FlashDrag"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit author GitHub page (opens in a new tab)"
+          ></a
+        >
+        <span>| All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/c7dbda0798.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
