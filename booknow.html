@@ -46,6 +46,19 @@
         <div class="brush-stroke book-now" id="book-now">
           <a href="booknow.html#appoitment">Book Now</a>
         </div>
+
+        <div class="user-menu" data-user-menu>
+          <button class="user-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span class="user-name">Account</span>
+          </button>
+          <div class="user-dropdown" hidden>
+            <a href="login.html" data-auth="logged-out">Sign In</a>
+            <a href="signup.html" data-auth="logged-out">Sign Up</a>
+            <a href="history.html" data-auth="logged-in">Booking History</a>
+            <button type="button" class="user-logout" data-auth="logged-in">Logout</button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -133,7 +146,7 @@
         <div class="grunge-border left"></div>
         <div class="grunge-border right"></div>
         <div class="form-container">
-          <form action="https://formdump.codeinstitute.net/" method="POST" class="appoitment-form">
+          <form action="#" method="POST" class="appoitment-form">
             <h2>Book appointment</h2>
 
             <div class="data">
@@ -192,7 +205,7 @@
 
                 <div class="input-block datetime">
                   <label for="time">Time</label>
-                  <input type="time" id="time" name="time" required>
+                  <input type="time" id="time" name="time" min="09:00" max="23:00" required>
                 </div>
               </div>
             </div>
@@ -234,6 +247,7 @@
             <div class="submit-button">
               <input type="submit" value="COMPLETE">
             </div>
+            <p class="form-status" aria-live="polite"></p>
           </form>
         </div>
 
@@ -344,5 +358,7 @@
       src="https://kit.fontawesome.com/c7dbda0798.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="assets/js/booking-form.js"></script>
+    <script type="module" src="assets/js/user-menu.js"></script>
   </body>
 </html>

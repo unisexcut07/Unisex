@@ -46,6 +46,19 @@
         <div class="brush-stroke book-now" id="book-now">
           <a href="booknow.html#appoitment">Book Now</a>
         </div>
+
+        <div class="user-menu" data-user-menu>
+          <button class="user-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span class="user-name">Account</span>
+          </button>
+          <div class="user-dropdown" hidden>
+            <a href="login.html" data-auth="logged-out">Sign In</a>
+            <a href="signup.html" data-auth="logged-out">Sign Up</a>
+            <a href="history.html" data-auth="logged-in">Booking History</a>
+            <button type="button" class="user-logout" data-auth="logged-in">Logout</button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -197,5 +210,6 @@
       src="https://kit.fontawesome.com/c7dbda0798.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="assets/js/user-menu.js"></script>
   </body>
 </html>

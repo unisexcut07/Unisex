@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pavlo Myskov">
+    <meta name="description" content="Admin dashboard for bookings">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Admin | Bookings</title>
+  </head>
+
+  <body>
+    <header class="sticky">
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="barber shop nav logo"
+          >
+          </a>
+        </div>
+
+        <div class="admin-nav-actions">
+          <span class="admin-title">Admin Dashboard</span>
+          <button id="admin-logout" class="admin-logout" type="button">Sign out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="admin-page">
+      <section class="admin-panel">
+        <h1>Bookings</h1>
+        <p class="admin-subtitle">Live updates from the booking form.</p>
+
+        <p class="admin-empty" hidden>No bookings yet.</p>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Customer</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Services</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="assets/js/admin.js"></script>
+  </body>
+</html>

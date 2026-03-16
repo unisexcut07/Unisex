@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pavlo Myskov">
+    <meta name="description" content="Booking history">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>My Bookings</title>
+  </head>
+
+  <body>
+    <header class="sticky">
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="barber shop nav logo"
+          >
+          </a>
+        </div>
+
+        <ul class="menu-list">
+          <li class="brush-stroke"><a href="index.html">HOME</a></li>
+          <li class="brush-stroke"><a href="booknow.html">PRICE</a></li>
+          <li class="brush-stroke"><a href="gallery.html">GALLERY</a></li>
+        </ul>
+
+        <div class="user-menu" data-user-menu>
+          <button class="user-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span class="user-name">Account</span>
+          </button>
+          <div class="user-dropdown" hidden>
+            <a href="login.html" data-auth="logged-out">Sign In</a>
+            <a href="signup.html" data-auth="logged-out">Sign Up</a>
+            <a href="history.html" data-auth="logged-in">Booking History</a>
+            <button type="button" class="user-logout" data-auth="logged-in">Logout</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="account-container">
+        <div class="account-panel account-history-only">
+          <div class="account-history">
+            <div class="history-header">
+              <h2>My Bookings</h2>
+            </div>
+            <p class="history-empty">Loading your bookings...</p>
+            <ul class="history-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/auth.js"></script>
+    <script type="module" src="assets/js/user-menu.js"></script>
+  </body>
+</html>
