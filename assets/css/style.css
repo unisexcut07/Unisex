@@ -149,6 +149,10 @@ h2 {
   box-shadow: 0 10px 25px rgba(20, 14, 12, 0.12);
 }
 
+.auth-page .navbar {
+  padding: 0 1.2rem;
+}
+
 /* logo */
 .logo-image {
   position: relative;
@@ -168,6 +172,11 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+}
+
+.auth-page .menu-list {
+  width: auto;
+  gap: 0.6rem;
 }
 
 .menu-list li a {
@@ -1333,6 +1342,20 @@ footer a:hover {
     left: 0;
   }
 
+  .auth-page .navbar {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1rem;
+    padding: 0.5rem 1rem 0.7rem;
+  }
+  .auth-page .menu-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   /* services section */
   #stroke {
     width: 150px;
@@ -1502,6 +1525,20 @@ footer a:hover {
   #burger-menu {
     width: 40px;
     height: 40px;
+  }
+
+  .auth-page .menu-list li a {
+    font-size: 0.95rem;
+  }
+  .account-container {
+    padding: 3.5rem 1rem 4rem;
+  }
+  .account-panel {
+    padding: 1.6rem;
+  }
+  .auth-form button {
+    align-self: stretch;
+    text-align: center;
   }
 
   /* services */
